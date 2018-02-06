@@ -1,0 +1,14 @@
+.image{
+    width: 50px;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.userData {
+    padding: 10px;
+    border: 2px solid beige;
+}

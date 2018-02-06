@@ -1,0 +1,7 @@
+<h2 style="text-align: center"> User Detail Informatoin </h2>
+<div *ngIf = "user">
+    <p> UserName: {{user.name}}</p>
+    <p> Email: {{user.email}} </p>
+    <small> Followers: {{user.followers}}</small>
+    <p> CreatedAt: {{user.created_at | date }}</p>
+</div>

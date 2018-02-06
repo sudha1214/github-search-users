@@ -1,0 +1,14 @@
+
+<div style="text-align:center">
+<input  type="text" (keyup)="onKeyup($event)" />
+<button (click) ="getUsers()"> getUsers </button>
+<p *ngIf="searchCount"> totalCount: {{searchCount}} </p>
+</div>
+<ul *ngIf="searchResult">
+  <li *ngFor = "let user of searchResult.items"> 
+    <div class="userData"> 
+      <img class="image" [src]="user.avatar_url">
+      <button (click) ='getUserDetails(user)'> {{user.login}} </button>
+    </div>
+  </li>
+</ul>
